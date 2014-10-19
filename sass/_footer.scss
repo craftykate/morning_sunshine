@@ -1,0 +1,21 @@
+/*_footer*/
+
+//*============FOOTER============*/
+#footer {
+	//background-color: lighten(gray, 30%);
+	padding:10px;
+	clear:both;
+	border-top: 1px solid lighten(gray, 30%);
+	//@include rounded(0, 0, 10px,10px);
+	ul {
+		text-align: center;
+	}
+	li {
+		display:inline;
+	}
+	a, a:visited {
+		&:hover, &:focus, &:active { 
+		}
+	}
+}
+//*============END FOOTER============*/

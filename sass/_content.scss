@@ -1,0 +1,49 @@
+/*_content*/
+
+//*============CONTENT============*/
+#content {
+	@include grid-unit(10, $gutter-width, $gutter-width);
+	margin: 0 auto;
+	.container {
+		@include round;
+		margin: 20px 0;
+		border: 1px solid lighten(gray, 30%);
+		padding: 10px;
+		h2 {
+			position: relative;
+			font-size: 1.5em;
+			background-color: $accent;
+			color: white;
+			width: 505px;
+			left: -11px;
+			padding: 5px 10px;
+			top: -11px;
+			@include rounded(10px, 10px, 0, 0);
+		}
+		h3 {
+			font-size: 1.3em;
+		}
+		.email {
+			border: 1px solid lighten(gray, 30%);
+			@include round;
+			padding: 5px;
+			margin: 10px;
+			p {
+				margin: 0;
+				&:first-child {
+					font-weight: bold;
+				}
+			}
+			a {
+				color: $text;
+				text-decoration: none;
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+	.workflowy iframe {
+	}
+}
+//*============END CONTENT============*/

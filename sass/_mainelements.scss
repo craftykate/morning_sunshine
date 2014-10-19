@@ -1,0 +1,21 @@
+/*_mainelements*/
+
+//*============MAIN PAGE ELEMENTS============*/
+body {
+	position:relative; 
+	margin: 0 auto;
+	background-image:url(../img/lightredchevron.png);
+	background-attachment: fixed;
+}
+
+#wrapper {
+	background-color: white;
+	width: 660px;
+	margin: 20px auto;
+	@include round;
+}
+
+.clear {
+	clear:both;
+}
+//*============END MAIN PAGE ELEMENTS============*/

@@ -1,0 +1,73 @@
+/* 
+Theme Name: Kate McFaul, Morning Sunshine
+Author: Kate McFaul
+Author URI: http://katemcfaul.com
+License: For Kate McFaul's private use only
+*/
+/* _reset.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+body { line-height: 1; }
+
+ol, ul { list-style: none; }
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+/* _mixins.scss */
+/* _colors.scss */
+/* _text.scss */
+body { font-family: 'Quicksand', sans-serif; font-size: 1em; color: #545252; }
+
+ul, p { line-height: 150%; text-align: justify; }
+
+p { margin-bottom: 1em; }
+
+a, a:visited { color: #ffb733; }
+
+i, em { font-style: italic; }
+
+strong { font-weight: bold; }
+
+.oops { color: red; }
+
+/*_mainelements*/
+body { position: relative; margin: 0 auto; background-image: url(../img/lightredchevron.png); background-attachment: fixed; }
+
+#wrapper { background-color: white; width: 660px; margin: 20px auto; -webkit-border-radius: 10px; border-radius: 10px; -o-border-radius: 10px; -ms-border-radius: 10px; -moz-border-radius: 10px; }
+
+.clear { clear: both; }
+
+/*_header*/
+#header { padding: 20px; border-bottom: 1px solid #cccccc; }
+#header ul { text-align: center; }
+#header ul li { display: inline; }
+#header h1 { font-size: 2em; margin-bottom: 10px; }
+#header h2 { font-size: 1.5em; font-style: italic; }
+
+/*@import 'sidebar'; //Site sidebar*/
+/*_content*/
+#content { width: 79.59184%; margin-left: 2.04082%; margin-right: 2.04082%; margin: 0 auto; }
+#content .container { -webkit-border-radius: 10px; border-radius: 10px; -o-border-radius: 10px; -ms-border-radius: 10px; -moz-border-radius: 10px; margin: 20px 0; border: 1px solid #cccccc; padding: 10px; }
+#content .container h2 { position: relative; font-size: 1.5em; background-color: #ffb733; color: white; width: 505px; left: -11px; padding: 5px 10px; top: -11px; -webkit-border-top-left-radius: 10px; border-top-left-radius: 10px; -o-border-top-left-radius: 10px; -ms-border-top-left-radius: 10px; -moz-border-radius-topleft: 10px; -webkit-border-top-right-radius: 10px; border-top-right-radius: 10px; -o-border-top-right-radius: 10px; -ms-border-top-right-radius: 10px; -moz-border-radius-topright: 10px; -webkit-border-bottom-right-radius: 0; border-bottom-right-radius: 0; -o-border-bottom-right-radius: 0; -ms-border-bottom-right-radius: 0; -moz-border-radius-bottomright: 0; -webkit-border-bottom-left-radius: 0; border-bottom-left-radius: 0; -o-border-bottom-left-radius: 0; -ms-border-bottom-left-radius: 0; -moz-border-radius-bottomleft: 0; }
+#content .container h3 { font-size: 1.3em; }
+#content .container .email { border: 1px solid #cccccc; -webkit-border-radius: 10px; border-radius: 10px; -o-border-radius: 10px; -ms-border-radius: 10px; -moz-border-radius: 10px; padding: 5px; margin: 10px; }
+#content .container .email p { margin: 0; }
+#content .container .email p:first-child { font-weight: bold; }
+#content .container .email a { color: #545252; text-decoration: none; }
+#content .container .email a:hover { text-decoration: underline; }
+
+/*@import 'forms'; //Styles forms*/
+/*_footer*/
+#footer { padding: 10px; clear: both; border-top: 1px solid #cccccc; }
+#footer ul { text-align: center; }
+#footer li { display: inline; }
+
+/*_responsive*/
+/* main.scss */

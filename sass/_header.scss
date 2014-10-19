@@ -1,0 +1,23 @@
+/*_header*/
+
+//*============HEADER============*/
+#header {
+	padding: 20px;
+	border-bottom: 1px solid lighten(gray, 30%);
+	ul {
+		text-align: center;
+		li {
+			display: inline;
+		}
+	}
+	h1 {
+		font-size: 2em;
+		margin-bottom: 10px;
+	}
+	
+	h2 {
+		font-size: 1.5em;
+		font-style: italic;
+	}
+}
+//*============END HEADER============*/

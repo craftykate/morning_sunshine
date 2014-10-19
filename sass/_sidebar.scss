@@ -1,0 +1,8 @@
+/*_sidebar*/
+
+//*============SIDEBAR============*/
+#sidebar {
+	background-color: lighten(gray, 30%);
+	@include grid-unit(3, $gutter-width, 0);
+}
+//*============END SIDEBAR============*/

@@ -1,0 +1,78 @@
+/*_forms*/
+
+//*============FORMS============*/
+form {
+	background-color: white;
+	margin: 30px auto;
+	width: 90%;
+	padding: 20px;
+	@include round(20px);
+	fieldset {
+		legend {
+			font-size: 130%;
+			margin-bottom: 10px;
+		}
+		div:not([class=radio]):not([class=checkbox]) {
+			clear: both;
+			padding-top: 10px;
+		}
+		label {
+			float: left;
+			width: 40%;
+			text-align: right;
+			padding-right: 10px;
+			display: block;
+		}
+		input.style {
+			width: 50%;
+			height: 20px;
+		}
+		textarea {
+			width: 50%;
+			height: 100px;
+		}
+		.radio, .checkbox {
+			display: block;
+			float: left;
+			width: 50%;
+		}
+		.radio input, .checkbox input{
+			display: inline-block;
+			position: relative;
+			margin-right: 8px;
+			top: -2px;
+		}
+		input.style, textarea{
+			@include round;
+			padding: 5px;
+			border: 1px solid gray;
+			-webkit-box-shadow:rgb(145, 145, 145) 5px 5px 5px -5px inset;
+			box-shadow:rgb(145, 145, 145) 5px 5px 5px -5px inset;
+			-o-box-shadow:rgb(145, 145, 145) 5px 5px 5px -5px inset;
+			-ms-box-shadow:rgb(145, 145, 145) 5px 5px 5px -5px inset;
+			-moz-box-shadow:rgb(145, 145, 145) 5px 5px 5px -5px inset;
+			&:focus {
+				outline-style:none;
+				outline-width:initial;
+				outline-color:#000000;	
+				-webkit-box-shadow:rgb(145, 145, 145) 5px 5px 5px -5px inset, rgb(145, 145, 145) 0px 0px 3px 1px;
+				box-shadow:rgb(145, 145, 145) 5px 5px 5px -5px inset, rgb(145, 145, 145) 0px 0px 3px 1px;
+				-o-box-shadow:rgb(145, 145, 145) 5px 5px 5px -5px inset, rgb(145, 145, 145) 0px 0px 3px 1px;
+				-ms-box-shadow:rgb(145, 145, 145) 5px 5px 5px -5px inset, rgb(145, 145, 145) 0px 0px 3px 1px;
+				-moz-box-shadow:rgb(145, 145, 145) 5px 5px 5px -5px inset, rgb(145, 145, 145) 0px 0px 3px 1px;
+			}
+		}
+		.submit {
+			width: 100%;
+			text-align: center;
+			input {
+				cursor: pointer;
+				@include setfont(text);
+			}
+			.shinybutton {
+				@include shinybutton();
+			}
+		}
+	}
+}
+//*============FORMS============*/
